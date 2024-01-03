@@ -1,7 +1,8 @@
-h1 {
+h2 {
     text-align: center;
     color: red;
     font-family:  cursive;
+    margin-top: 30px;
 }
 
 .word-count {

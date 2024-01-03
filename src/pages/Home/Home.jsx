@@ -47,7 +47,7 @@ export const Home = () => {
 
     return (
         <main>
-            <h1>Dictionary</h1>
+            <h2>Dictionary</h2>
             <div className="word-count">Words:{totalWordsCount}</div>
             <LetterLinks groupedWords={groupedWords} />
             <div className="word-groups">
