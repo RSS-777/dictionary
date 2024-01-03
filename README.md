@@ -1,8 +1,25 @@
-# React + Vite
+# Weather
+>Hello, my name is **Sergey**!
+ This web application is a simple dictionary of 3000 words with the ability to save a learned word in **a list of saved words** and automatically remove this word from the dictionary.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Basic functions
+* **Saving words**: The application provides an opportunity to save the learned word to the list of learned words
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+
+### Tech stack
+* [X] **React**: *JavaScript-library* for building user interfaces.
+* [X] **Vite**: Fast and advanced web application development tool.
+* [X] **React Router**: Library for navigating and managing pages in *React* applications.
+___
+[Link to this *dictionary*]()
+
+___
+### Screenshot
+<img src="./public/../src/assets/dictionary2.png" width="300px" height="180px">
+<img src="./public/../src/assets/dictionary1.png" width="300px" height="180px">
+<img src="./public/../src/assets/dictionary3.png" width="300px" height="180px">
+
+
+
