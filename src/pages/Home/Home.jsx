@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { translations } from '../../utils/translations'
+import { LetterLinks } from '../../components/LetterLinks/LetterLinks'
 import './Home.css'
 
 export const Home = () => {
@@ -36,7 +37,7 @@ export const Home = () => {
         const selectedWords = JSON.parse(localStorage.getItem('selectedWords')) || [];
         selectedWords.push({ key, value })
         localStorage.setItem('selectedWords', JSON.stringify(selectedWords))
-        setUpdatedWords(prevWords => prevWords.filter((_, i) => i !== index))
+        setUpdatedWords(prevWords => prevWords.filter(([wordKey, _]) => wordKey !== key))
     }
 
     const totalWordsCount = Object.values(groupedWords).reduce(
@@ -48,11 +49,12 @@ export const Home = () => {
         <main>
             <h1>Dictionary</h1>
             <div className="word-count">Words:{totalWordsCount}</div>
+            <LetterLinks groupedWords={groupedWords} />
             <div className="word-groups">
                 {Object.keys(groupedWords)
                     .sort()
                     .map((letter) => (
-                        <div className='word-group' key={letter}>
+                        <div className='word-group' key={letter} id={letter}>
                             <h3>{letter}</h3>
                             <ol>
                                 {groupedWords[letter].map(([key, value], index) => {

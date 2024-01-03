@@ -1,3 +1,4 @@
+import { LetterLinks } from '../../components/LetterLinks/LetterLinks';
 import './learnedWords.css'
 
 export const LearnedWords = () => {
@@ -21,11 +22,12 @@ export const LearnedWords = () => {
         <div>
             <h2>LearnedWords</h2>
             <div className="word-count">Words:{totalWordsCount}</div>
+            <LetterLinks groupedWords={groupedLearnedWords} />
             <div className="word-groups">
                 {Object.keys(groupedLearnedWords)
                     .sort()
                     .map((letter) => (
-                        <div className="word-group" key={letter}>
+                        <div className="word-group" key={letter} id={letter}>
                             <h3>{letter}</h3>
                             <ol>
                                 {groupedLearnedWords[letter].map(({ key, value }, index) => {

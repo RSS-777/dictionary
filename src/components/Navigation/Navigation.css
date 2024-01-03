@@ -3,11 +3,11 @@ nav > ul {
     position: fixed;
     top: 0;
     left: 0;
-    width: 150px;
     padding: 2px 5px;
     margin: 0 8px;
     border: 1px solid red;
     border-radius: 0 0 10px 10px;
+    box-shadow: 2px 2px 8px 1px black;
 }
 .active {
     color: red;
