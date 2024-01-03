@@ -1,4 +1,4 @@
-# Weather
+# Dictionary
 >Hello, my name is **Sergey**!
  This web application is a simple dictionary of 3000 words with the ability to save a learned word in **a list of saved words** and automatically remove this word from the dictionary.
 
