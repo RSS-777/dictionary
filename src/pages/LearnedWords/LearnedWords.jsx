@@ -21,8 +21,8 @@ export const LearnedWords = () => {
     return (
         <div>
             <h2>LearnedWords</h2>
-            <div className="word-count">Words:{totalWordsCount}</div>
             <LetterLinks groupedWords={groupedLearnedWords} />
+            <div className="word-count">Words:{totalWordsCount}</div>
             <div className="word-groups">
                 {Object.keys(groupedLearnedWords)
                     .sort()

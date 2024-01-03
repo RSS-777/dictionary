@@ -1,4 +1,4 @@
-nav > ul {
+.navigation > ul {
     background-color: rgb(221, 221, 221);
     position: fixed;
     top: 0;
@@ -13,7 +13,27 @@ nav > ul {
     color: red;
 }
 
-a {
+.navigation ul> a {
     margin-right: 5px;
     text-decoration: none;
+}
+
+button {
+    margin-right: 5px;
+    background-color: rgb(200, 200, 252);
+    border: 1px solid blue;
+    color: blue;
+    border-radius: 10px;
+}
+button:hover {
+    background-color: rgb(174, 174, 245);
+    color: red;
+}
+
+@media (max-width:540px) {
+    .navigation > ul {
+        width: calc(100% - 27px);
+        display: flex;
+        justify-content: space-between;
+    }
 }

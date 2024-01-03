@@ -48,8 +48,8 @@ export const Home = () => {
     return (
         <main>
             <h2>Dictionary</h2>
-            <div className="word-count">Words:{totalWordsCount}</div>
             <LetterLinks groupedWords={groupedWords} />
+            <div className="word-count">Words:{totalWordsCount}</div>
             <div className="word-groups">
                 {Object.keys(groupedWords)
                     .sort()
