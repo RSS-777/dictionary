@@ -9,25 +9,38 @@
     border-radius: 0 0 10px 10px;
     box-shadow: 2px 2px 8px 1px black;
 }
-.active {
-    color: red;
-}
 
 .navigation ul> a {
     margin-right: 5px;
     text-decoration: none;
 }
 
+.navigation ul> a:hover {
+  color: blue;
+}
+
+.active {
+    color: red;
+    cursor:default;
+}
+
+.active:hover {
+    color: red !important;
+}
+
 button {
     margin-right: 5px;
     background-color: rgb(200, 200, 252);
     border: 1px solid blue;
-    color: blue;
+    color: rgb(78, 0, 78);
     border-radius: 10px;
+    box-shadow: 1px 1px 4px 0 black;
 }
 button:hover {
     background-color: rgb(174, 174, 245);
-    color: red;
+    box-shadow: 0 0 3px 0 black;
+    color: blue;
+    cursor: pointer;
 }
 
 @media (max-width:540px) {

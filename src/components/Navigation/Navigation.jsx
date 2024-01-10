@@ -1,8 +1,12 @@
-import { NavLink } from "react-router-dom"
+import { NavLink, useNavigate } from "react-router-dom"
 import './Navigation.css'
+
 export const Navigation = () => {
+    const navigation = useNavigate();
+
     const resetWords = () => {
         localStorage.removeItem('selectedWords')
+        navigation('/')
     }
 
     return(
