@@ -13,7 +13,6 @@
 * [X] **Vite**: Fast and advanced web application development tool.
 * [X] **React Router**: Library for navigating and managing pages in *React* applications.
 ___
-[Link to this *dictionary*](https://rss-777.github.io/dictionary/)
 
 ___
 ### Screenshot
